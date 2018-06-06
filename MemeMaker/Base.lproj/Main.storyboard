@@ -24,9 +24,12 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fBB-w0-gD4">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="29"/>
                                         <segments>
-                                            <segment title="First"/>
+                                            <segment title="topCaptionSegmentedControl"/>
                                             <segment title="Second"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="topCaptionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ug9-gX-TMj"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="topCaptionLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpm-eh-gpb">
                                         <rect key="frame" x="0.0" y="58" width="240" height="20.5"/>
@@ -50,9 +53,12 @@
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8V4-gV-LW2">
                                         <rect key="frame" x="0.0" y="439" width="240" height="29"/>
                                         <segments>
-                                            <segment title="First"/>
+                                            <segment title="bottomCaptionSegmentedControl"/>
                                             <segment title="Second"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="topCaptionSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="k9x-mO-QoY"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <constraints>
@@ -69,9 +75,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="bottomCaptionSegmentedControl" destination="Sus-QM-yMJ" id="3U0-xF-SwW"/>
-                        <outlet property="bottomCaptionsSegmentControl" destination="Sus-QM-yMJ" id="99u-s0-JXc"/>
-                        <outlet property="topCaptionSegmentedControl" destination="cpm-eh-gpb" id="pVK-td-rIn"/>
+                        <outlet property="bottomCaptionSegmentedControl" destination="8V4-gV-LW2" id="gn6-6I-MSv"/>
+                        <outlet property="topCaptionSegmentedControl" destination="fBB-w0-gD4" id="ln2-m4-JpS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

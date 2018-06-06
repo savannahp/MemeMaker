@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var topCaptionSegmentedControl: UILabel!
-    @IBOutlet weak var bottomCaptionSegmentedControl: UILabel!
     
+    @IBAction func topCaptionSegmentedControl(_ sender: Any) {
+    }
+    @IBOutlet weak var topCaptionSegmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var bottomCaptionSegmentedControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
